@@ -7,7 +7,7 @@ personas[2] = "Amarusin bebe"
 for e in personas: 
     print(f"Hola {e} veni a cenar jaja")
     
-print("La mesa es más grande y ahora puede venir mas gente")
+print("La mesa es más grande y ahora puede venir más gente")
 personas.insert(0, "Mama")
 lol = len(personas) // 2
 personas.insert(lol, "Papa")
