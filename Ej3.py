@@ -1,0 +1,12 @@
+lugares = ["Peru", "Italia", "Grecia", "Brasil", "Francia"]
+print("Lista original:", lugares)
+print("Lista sorted(:", sorted(lugares))
+print("Lista original:", lugares)
+lugares.reverse()
+print("Lista reverse:", lugares)
+lugares.reverse()
+print("Lista reverse x2:", lugares)
+lugares.sort()
+print("Lista sort:", lugares)
+lugares.sort(reverse=True)
+print("Lista sort-reverse:", lugares)
