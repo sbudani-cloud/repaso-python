@@ -21,3 +21,9 @@ ciuds = {
     "Paris" : paris,
     "Nueva York" : nuevayk
 }
+
+for ciud, info in ciuds.items():
+    print(ciud)
+    for key, val in info.items():
+        print(f"    {key.title()}: {val}")
+    print()
