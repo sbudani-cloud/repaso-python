@@ -1,4 +1,3 @@
-#Ejercicios para hacer (nº de diapositiva): 262, 288, 312, 315, 348, 349\
 nombres = []
 while True:
     nombre = input("Ingrese su nombre (o escriba 'salir' para terminar): ")
