@@ -1,5 +1,3 @@
-#Ejercicios para hacer (nº de diapositiva): 193, 195, 205, 223, 232, 262, 288, 
-#312, 315, 348, 349\
 class Restaurante:
     def __init__(self, nombre, tipo_cocina):
         self.nombre = nombre
