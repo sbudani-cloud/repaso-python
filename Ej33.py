@@ -1,4 +1,3 @@
-#Ejercicios para hacer (nº de diapositiva): 223, 232, 262, 288, 312, 315, 348, 349\
 class Restaurante:
     def __init__(self, nombre, tipo_cocina):
         self.nombre = nombre
@@ -24,5 +23,4 @@ class PuestoDeHelados(Restaurante):
 
 amarusin = Restaurante("Los Amarusines Bebes", "Italiana")
 helados_amarusin = PuestoDeHelados("Los Amarusines Bebes", "Heladería", ["Frutilla", "Vainilla", "Chocolate"])
-
 helados_amarusin.mostrar_sabores()
