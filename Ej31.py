@@ -1,5 +1,3 @@
-#Ejercicios para hacer (nº de diapositiva): 205, 223, 232, 262, 288, 
-#312, 315, 348, 349\
 class Usuario:
     def __init__(self, nombre, apellido):
         self.nombre = nombre
