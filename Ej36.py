@@ -1,1 +1,12 @@
-#Ejercicios para hacer (nº de diapositiva): 287, 288, 312, 315, 348, 349\
+#Ejercicios para hacer (nº de diapositiva): 288, 312, 315, 348, 349\
+try:
+    a = int(input("Ingrese un número: "))
+except ValueError:
+    print("Eso no es un número amiguito...")
+else:
+    try:
+        b = int(input("Ingrese otro número: "))
+    except ValueError:
+        print("Eso no es un número amiguito...")
+    else:
+        print(f"El resultado es {a+b}.")
