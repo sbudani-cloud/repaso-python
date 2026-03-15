@@ -1,4 +1,3 @@
-#Ejercicios para hacer (nº de diapositiva): 348, 349\
 from pathlib import Path 
 import json
 
