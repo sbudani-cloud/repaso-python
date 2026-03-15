@@ -1,4 +1,4 @@
-#Ejercicios para hacer (nº de diapositiva): 288, 312, 315, 348, 349\
+#Ejercicios para hacer (nº de diapositiva): 312, 315, 348, 349\
 listo = False
 while not listo:
     try:
