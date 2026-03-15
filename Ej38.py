@@ -1,4 +1,4 @@
-#Ejercicios para hacer (nº de diapositiva): 315, 348, 349\
+#Ejercicios para hacer (nº de diapositiva): 348, 349\
 from pathlib import Path 
 import json
 
@@ -13,8 +13,8 @@ def obtener_usuario_guardado(path):
 def obtener_nuevo_usuario(path):
     #Pide un nuevo nombre de usuario.
     nombre = input("¿Cómo te llamás? ")
-    edad = input("¿Cuantos años tenes?")
-    ciud = input("¿En qué ciudad vivis?")
+    edad = input("¿Cuantos años tenes? ")
+    ciud = input("¿En qué ciudad vivis? ")
 
     user = {
         "Nombre" : nombre,
@@ -37,4 +37,19 @@ def saludar_usuario():
         user= obtener_nuevo_usuario(path)
         print(f"Te vamos a recordar cuando vuelvas, {user['Nombre'].title()}.")
 
-saludar_usuario()
+def preguntar_usuario():
+    path = Path('username.json')
+    user= obtener_usuario_guardado(path)
+    rta = True
+    while rta:
+        lol = input(f"Vos sos {user['Nombre']}?(y/n): ")
+        if lol.lower() == "y":
+            rta = False
+            saludar_usuario()
+        elif lol.lower() == "n":
+            rta = False
+            obtener_nuevo_usuario(path)
+        else:
+            print("Respusta no válida.")
+
+preguntar_usuario()
