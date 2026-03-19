@@ -10,11 +10,9 @@ def obtener_usuario_guardado(path):
         return None
 
 def obtener_nuevo_usuario(path):
-    #Pide un nuevo nombre de usuario.
     nombre = input("¿Cómo te llamás? ")
     edad = input("¿Cuantos años tenes? ")
     ciud = input("¿En qué ciudad vivis? ")
-
     user = {
         "Nombre" : nombre,
         "Edad" : edad,
@@ -26,7 +24,6 @@ def obtener_nuevo_usuario(path):
     return user
 
 def saludar_usuario():
-    #Saluda a la persona usuaria por su nombre.
     path = Path('username.json')
     user= obtener_usuario_guardado(path)
     if user:
